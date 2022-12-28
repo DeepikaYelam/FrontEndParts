@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script type="text/javascript" src='Practice.js'></script>
+</head>
+<script type="text/javascript">
+    function check(){
+        var week="sunday";
+        switch(week){
+            case "monday":
+                alert("Monday!")
+                break
+            case "tuesday":
+                alert("Tuesday!")
+                break
+            case "wendsday":
+                alert("Wendsday!")
+                break
+            case "thursday":
+                alert("Thursday!")
+                break
+            case  "friday":
+                alert("Friday!")
+                break
+            case "saturday":
+                alert("Saturday!")
+                break
+            case "sunday":
+                alert("Sunday!")
+                break
+
+        }
+    }
+</script>
+<body>
+    <button type="submit" name="b1" onclick="msg()">Click Me</button><br><br>
+    <button type="button" onclick="check()">Check</button><br><br>
+    <script>
+        var emp=new Object();
+        emp.id=4561;
+        emp.name="Deepika";
+        emp.salary=50000;
+        document.write(emp.id+" "+emp.name+" "+emp.salary+"<br/><br/>");
+        // <br/>
+        function employee(id,name,salary){
+            this.id=id;
+            this.name=name;
+            this.salary=salary;
+            this.changeSalary=sals;
+        }
+        function employee2(changeSalary){
+
+        }
+        e=new employee(6255,"Harika",60000);
+        document.write(e.id+" "+e.name+" "+e.salary);
+        
+
+    </script>
+</body>
+</html>

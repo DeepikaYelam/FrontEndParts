@@ -1,0 +1,166 @@
+<html>
+    <head>
+        <title>Tabular Form</title>
+        <style>
+            table{
+                border-collapse: collapse;
+            }
+            td,th{
+                border: 1px solid black;
+                text-align: left;
+                padding: 8px;
+                background-color: aqua;
+            }
+            th{
+                background-color: rgb(22, 253, 57);
+            }
+            tr:nth-child(even){
+                background-color: #D6EEEE;
+
+            }
+            
+           
+        </style>
+       
+    </head>
+    <body>
+        <table border="2">
+            <caption>HTML Table</caption>
+            <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+            <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
+            </tr>
+            <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francicso Chang</td>
+                <td>Mexico</td>
+            </tr>
+            <tr>
+                <td>Ernst Handel</td>
+                <td>Roland Mendel</td>
+                <td>Austria</td>
+            </tr>
+            <tr>
+                <td>Island Trading</td>
+                <td>Helen Bennett</td>
+                <td>UK</td>
+            </tr>
+        </table><br><br>
+        <table style="padding-top:10px;">
+            <tr>
+                <th colspan="2">Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Deepika</td>
+                <td>Yelam</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>Devi</td>
+                <td>Krishna</td>
+                <td>23</td>
+            </tr>
+        </table><br><br>
+        <table style="padding-top: 10px;">
+            <tr>
+                <th>Name</th>
+                <td>Deepika</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Mobile</th>
+                <td>6305361005</td>
+            </tr>
+            <tr>
+                <td>6363040273</td>
+            </tr>
+        </table>
+        <ul style="list-style-type:square;">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+        <ol type="I" start="50">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+        <div style="background-color:black; color: white; padding-left: 20px;">
+            <h2>London</h2>
+            <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+            <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who name it Londinium.</p>
+        </div>
+        Round of 4.4 is: <span id="p1"></span>
+        <script>document.getElementById('p1').innerHTML=Math.round(4.4)</script><br><br>
+        Ceil of 5.5 is: <span id="p2"></span>
+        <script>document.getElementById('p2').innerHTML=Math.ceil(5.4)</script><br><br>
+        <script>
+            var s1="Welcome to the computer world!";
+            var s2=s1.toUpperCase();
+            document.write(s2);
+        </script><br><br>
+        <script type="text/javascript">
+            function print(){
+                var msg=prompt("Who are you?");
+                alert("I am "+msg);
+            }
+        </script>
+        <input type="button" onclick="print()" value="Click Me"/><br><br>
+        <script type="text/javascript">  
+            function msg(){  
+            var v= prompt("Who are you?");  
+            alert("I am "+v);  
+              
+            }  
+        </script>  
+              
+        <input type="button" value="Click" onclick="msg()"/>  <br><br>
+        <script type="text/javascript">
+            function check(){
+                open("http://www.javatpoint.com")
+            }
+        </script>
+        <button type="button" onclick="check()">Check Site</button><br><br>
+        <script type="text/javascript">
+            function msgs(){
+                setTimeOut(
+                    function(){
+                    alert("THis will be print after 3 seconds")},3000);
+            }
+        </script>
+        <button type="button" onclick="msgs()">Check Msg</button><br><br>
+        <script>
+            document.writeln("navigator.appCodeName: "+navigator.appCodeName);
+            document.writeln("<br> navigator.appName: "+navigator.appName);
+            document.writeln("<br> navigator.appVersion: "+navigator.appVersion);
+            document.writeln("<br> navigator.cookieEnabled: "+navigator.cookieEnabled);
+            document.writeln("<br> navigator.language: "+navigator.language);
+            document.writeln("<br> navigator.userAgent: "+navigator.userAgent);
+            document.writeln("<br> navigator.platform: "+navigator.platform);
+            document.writeln("<br> navigator.onLine: "+navigator.onLine);
+        </script><br><br>
+        <script type="text/javascript">
+            function printValue(){
+                var name=document.f1.n1.value;
+                alert("Welcome: "+name);
+            }
+        </script>
+        <form name="f1" method="post">
+            Enter Name:<input type="text" name="n1">
+            <input type="button" onclick="printValue()" value="Print Name"> 
+        </form><br><br>
+        <script type="text/javascript">
+            function  getCube(){
+                var number=document.getElementById("number").value;
+                alert(number*number*number);
+            }
+        </script>
+
+    </body>
+</html>

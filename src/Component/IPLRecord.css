@@ -1,0 +1,40 @@
+.col-md-4{
+    margin-left: 250px;
+    /* display: flex; */
+    /* border: solid; */
+}
+.col-md-8{
+    border: solid;
+    width:240px;
+    margin-top: 0%;
+}
+/* .data{
+    border:solid;
+    margin-top: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    width: 250px;
+    font-size:16px;
+    font-weight: 520;
+}
+.title{
+    display: flex;
+}
+.image{
+    border: solid;
+    align-self:auto;
+    margin-left: 600px;
+    margin-bottom: 50px;
+    height: 10px;
+}
+.img{
+    border: solid;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    margin-left: 300px;
+    margin-top: 10px;
+    padding-top: 0px;
+}
+.data{
+    display: flex;
+} */

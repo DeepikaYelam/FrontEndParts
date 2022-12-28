@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Employee Page</title>
+    </head>
+    <body>
+        <script>
+            class Employee{
+                constructor(id,name){
+                    this.id=id;
+                    this.name=name;
+                }
+                detail(){
+                    document.writeln(this.id+" "+this.name+ "<br>")
+                }
+            }
+            var e1=new Employee(540,"Deepika");
+            var e2=new Employee(534,"Devi Krishna");
+            e1.detail();
+            e2.detail();
+        </script>
+    </body>
+</html>

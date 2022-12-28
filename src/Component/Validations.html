@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Page Title</title>
+    
+  
+</head>
+<body>
+    <script type='text/javascript'>
+        function validate(){
+            var name=document.f1.name.value;
+            var password=document.f1.pwd.value;
+            var repwd=document.f1.repwd.value;
+            var mobile=document.f1.mobile.value;
+            var email=document.f1.email.value;
+            if(name==null || name==""){
+                document.getElementById("error").innerHTML="Name Should Not be Empty!";
+            }
+            else if(password==null || password==""){
+                document.getElementById("error").innerHTML="Password Should Not be Empty!";
+            }
+            else if(password.length<6){
+                document.getElementById("error").innerHTML="Password Must Containg 6 Characters";
+            }
+            else if(pwd!=repwd){
+                document.getElementById("error").innerHTML="Password Must be Same!";
+            }
+            else if(mobile<10 || mobile>10){
+                document.getElementById("error").innerHTML="Mobile Number Must Contain 10 Digits";
+            }
+            // else if(email.indexOf("@")){
+            //     document.getElementById("error").innerHTML="Please Provide a Valid Email Address";
+            // }
+        }
+    </script>
+    <form action="#" name="f1" method="post" onsubmit="validate()">
+        <table>
+            <tr>
+                <td>Name: </td>
+                <td>
+                    <input type="text" name="name">
+                    <span id="error" style="color:red"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Password: </td>
+                <td>
+                    <input type="password" name="pwd">
+                    <span id="error" style="color:red"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Re-Enter Password: </td>
+                <td>
+                    <input type="password" name="repwd">
+                    <span id="error" style="color:red"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Email: </td>
+                <td>
+                    <input type="email" name="email">
+                    <span id="error" style="color:red"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Mobile No: </td>
+                <td>
+                    <input type="number" name="mobile">
+                    <span id="error" style="color:red"></span>
+                </td>
+            </tr><br>
+            <tr>
+                <td colspan="2">
+                    <button>Submit</button>
+                </td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+</html>

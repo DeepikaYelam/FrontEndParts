@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function getCube(){
+                var number=document.getElementById("num").value;
+                alert(number*number*number);
+            }
+            function totalElements(){
+                var allGenders=document.getElementsByName("gender");
+                alert("Total Genders: "+allGenders.length);
+                alert("Values: "+allGenders.values);
+            }
+            function totalTags(){
+                var totalTags=document.getElementsByTagName("h2");
+                alert("Total h2 tags are: "+totalTags.length);
+            }
+            function showComment(){
+                var data="Name: <br><input type='text' name='name'><br>Comment:<br><textarea rows='5' cols='50'></textarea><br><input type='submit' value='Comment'>";
+                document.getElementById('myLocation').innerHTML=data;
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            Enter Number: <input type="number" id="num"><br>
+            <button onclick="getCube()">Cube</button><br><br>
+            Male: <input type="radio" name="gender">
+            Female: <input type="radio" name="gender">
+            Transgender: <input type="radio" name="gender"><br>
+            <button onclick="totalElements()">Check</button>
+        </form><br><br>
+        <h1>The Document Object</h1>
+        <h2>The document.getELemnetsByName Method</h2>
+        Cats: <input name="animal" type="checkbox">
+        Dogs: <input name="animal" type="checkbox">
+        <p>Check the checkboxes that have a name="animal":</p>
+        <script>
+            const collection=document.getElementsByName("animal")
+            for(let i=0;i<collection.length;i++){
+                if(collection[i].type=="checkbox"){
+                    collection[i].checked=1;
+                }
+            }
+        </script><br><br>
+        <button onclick="totalTags()">Check Tags</button><br><br>
+        <button onclick="showComment()">Comment</button>
+        <div id="myLocation"></div>
+    </body>
+</html>
